@@ -295,7 +295,7 @@ body {
 
 .events__box img {
   width: 100%;
-  height: 60vh;
+  height: 65vh;
   -o-object-fit: cover;
      object-fit: cover;
   background-position: center;
@@ -326,7 +326,7 @@ body {
 }
 
 .events__box p {
-  padding: 1em 0;
+  padding: 0.5em 0;
 }
 
 .events__box li {
