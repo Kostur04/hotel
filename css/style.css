@@ -103,14 +103,14 @@ body {
 }
 
 .header .nav__mobile-list {
-  padding: 0 3.5em;
+  padding: 0 3.8em;
   text-align: center;
   border: 1px solid #cc9922;
 }
 
 .header .nav__mobile-list-item {
   display: block;
-  margin: 1.2em 0;
+  margin: 1.8em 0;
   font-size: 1.8rem;
   text-decoration: none;
   color: #cc9922;
@@ -176,16 +176,14 @@ body {
 }
 
 .header__bottom-nav {
-  position: absolute;
-  bottom: 0;
-  height: 60px;
-  width: 100%;
-  padding: 1.3em 0;
-  cursor: pointer;
-  background-color: #222224;
-  z-index: 10;
   position: fixed;
   bottom: 0;
+  height: 75px;
+  width: 100%;
+  padding: 2em 0;
+  cursor: pointer;
+  background-color: #222224;
+  z-index: 1;
 }
 
 .header__bottom-nav-box {
@@ -590,46 +588,30 @@ body {
   .header__reservation-box {
     position: absolute;
     bottom: 30px;
+    left: 10%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[6];
+        grid-template-columns: repeat(6, 1fr);
+    gap: 30px;
     width: 100%;
     color: #cc9922;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
   }
-  .header__reservation-box-date {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    margin: 0 1em;
-    max-height: 40px;
-  }
-  .header__reservation-box-date input {
-    padding: 0.2em;
-    margin-left: 0.5em;
-    color: #cc9922;
+  .header__reservation-box input {
     border: 2px solid #cc9922;
     background: none;
+    color: #cc9922;
+    padding: 0.3em;
   }
-  .header__reservation-box-date p {
+  .header__reservation-box p {
     font-size: 1.8rem;
+    margin-bottom: 0.3em;
   }
   .header__reservation-box h3 {
     text-transform: uppercase;
     font-weight: 400;
   }
   .header__reservation-box-btn {
-    padding: 0.8em;
     color: #ffffff;
     background-color: #cc9922;
     text-transform: uppercase;
@@ -690,7 +672,7 @@ body {
             transform-origin: right;
   }
   .main .section-heading {
-    margin-top: 4em;
+    margin-top: 3.2em;
     font-size: 5rem;
   }
   .main .contact {
@@ -698,7 +680,11 @@ body {
     display: grid;
     -ms-grid-columns: (1fr)[4];
         grid-template-columns: repeat(4, 1fr);
-    padding: 1.5em 5em;
+    padding: 1.5em 0;
+    position: relative;
+  }
+  .main .contact__box {
+    margin-top: 45px;
   }
   .main .contact__box-info {
     display: block;
@@ -801,16 +787,16 @@ body {
     z-index: 3000;
   }
   .header__img-left img {
-    width: 490px;
+    width: 430px;
     height: 100%;
-    padding: 4.8em;
+    padding: 4.5em;
   }
   .header .heading__bg {
     display: block;
     position: absolute;
     bottom: 60px;
     right: 0;
-    height: 270px;
+    height: 250px;
     width: 30%;
     background-color: #d6e4e3;
     overflow: hidden;
@@ -845,14 +831,13 @@ body {
     height: 75vh;
   }
   .header .heading__bg {
-    height: 360px;
-    width: 35%;
+    height: 300px;
   }
   .header .heading__bg-text {
-    font-size: 5.4rem;
+    font-size: 5rem;
   }
   .header__img-left img {
-    width: 620px;
+    width: 500px;
   }
   .header__reservation-box {
     position: absolute;
@@ -866,23 +851,23 @@ body {
     font-size: 3rem;
   }
   .header .nav__box-list-item {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
   .main .packages .section-heading {
-    font-size: 5.7rem;
+    font-size: 5.5rem;
   }
   .main .aboutus__text {
     margin-top: -4px;
     font-size: 2.6rem;
   }
   .main .events__box-text {
-    font-size: 2.5rem;
-  }
-  .main .contact h4 {
     font-size: 2.4rem;
   }
+  .main .contact h4 {
+    font-size: 2.3rem;
+  }
   .main .contact p {
-    font-size: 1.9rem;
+    font-size: 1.8rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

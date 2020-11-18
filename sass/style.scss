@@ -92,13 +92,13 @@ body {
             }
 
             &-list {
-                padding: 0 3.5em;
+                padding: 0 3.8em;
                 text-align: center;
                 border: 1px solid $gold-color;
 
                 &-item {
                     display: block;
-                    margin: 1.2em 0;
+                    margin: 1.8em 0;
                     font-size: 1.8rem;
                     text-decoration: none;
                     color: $gold-color;
@@ -160,16 +160,14 @@ body {
     }
 
     &__bottom-nav {
-        position: absolute;
-        bottom: 0;
-        height: 60px;
-        width: 100%;
-        padding: 1.3em 0;
-        cursor: pointer;
-        background-color: $gray-color;
-        z-index: 10;
         position: fixed;
         bottom: 0;
+        height: 75px;
+        width: 100%;
+        padding: 2em 0;
+        cursor: pointer;
+        background-color: $gray-color;
+        z-index: 1;
 
         &-box {
             display: flex;
@@ -420,11 +418,12 @@ body {
 @media (max-width: 360px) {
     .header {
         .nav {
-            &__mobile-list-item{
+            &__mobile-list-item {
                 font-size: 1.3rem;
             }
         }
     }
+
     .main {
         .events {
             &__box-text {
@@ -472,7 +471,9 @@ body {
                 }
             }
         }
-    }
+    }    
+        
+   
 
     .main {
         .section-heading {
@@ -581,29 +582,23 @@ body {
             &-box {
                 position: absolute;
                 bottom: 30px;
+                left: 10%;
+                display: grid;
+                grid-template-columns: repeat(6, 1fr);
+                gap: 30px;
                 width: 100%;
                 color: $gold-color;
-                display: flex;
-                justify-content: center;
-                flex-direction: row;
 
-                &-date {
-                    display: flex;
-                    flex-direction: row;
-                    margin: 0 1em;
-                    max-height: 40px;
-
-                    input {
-                        padding: 0.2em;
-                        margin-left: 0.5em;
-                        color: $gold-color;
-                        border: 2px solid $gold-color;
-                        background: none;
-                    }
-
-                    p {
-                        font-size: 1.8rem;
-                    }
+    
+                input{
+                    border: 2px solid $gold-color;
+                    background: none;
+                    color: $gold-color;
+                    padding: 0.3em;
+                }
+                p {
+                    font-size: 1.8rem;
+                    margin-bottom: 0.3em;
                 }
 
                 h3 {
@@ -613,7 +608,6 @@ body {
                 }
 
                 &-btn {
-                    padding: 0.8em;
                     color: #ffffff;
                     background-color: $gold-color;
                     text-transform: uppercase;
@@ -686,16 +680,19 @@ body {
     .main {
 
         .section-heading {
-            margin-top: 4em;
+            margin-top: 3.2em;
             font-size: 5rem;
         }
 
         .contact {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
-            padding: 1.5em 5em;
+            padding: 1.5em 0;
+            position: relative;
 
             &__box {
+                margin-top: 45px;
+
                 &-info {
                     display: block;
                     font-size: 1.5rem;
@@ -814,9 +811,9 @@ body {
             z-index: 3000;
 
             img {
-                width: 490px;
+                width: 430px;
                 height: 100%;
-                padding: 4.8em;
+                padding: 4.5em;
             }
         }
 
@@ -825,7 +822,7 @@ body {
             position: absolute;
             bottom: 60px;
             right: 0;
-            height: 270px;
+            height: 250px;
             width: 30%;
             background-color: $white-color;
             overflow: hidden;
@@ -855,17 +852,16 @@ body {
         }
 
         .heading__bg {
-            height: 360px;
-            width: 35%;
+            height: 300px;
 
             &-text {
-                font-size: 5.4rem;
+                font-size: 5rem;
             }
         }
 
         &__img-left {
             img {
-                width: 620px;
+                width: 500px;
             }
         }
 
@@ -889,7 +885,7 @@ body {
 
         .nav {
             &__box-list-item {
-                font-size: 1.8rem;
+                font-size: 1.6rem;
             }
         }
 
@@ -898,7 +894,7 @@ body {
     .main {
         .packages {
             .section-heading {
-                font-size: 5.7rem;
+                font-size: 5.5rem;
             }
         }
 
@@ -912,7 +908,7 @@ body {
         .events {
             &__box {
                 &-text {
-                    font-size: 2.5rem;
+                    font-size: 2.4rem;
                 }
             }
         }
@@ -920,11 +916,11 @@ body {
 
         .contact {
             h4 {
-                font-size: 2.4rem;
+                font-size: 2.3rem;
             }
 
             p {
-                font-size: 1.9rem;
+                font-size: 1.8rem;
             }
         }
     }
